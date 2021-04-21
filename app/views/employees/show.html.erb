@@ -1,0 +1,23 @@
+<%
+def separate_comma(number)
+  whole, decimal = number.to_s.split(".")
+  whole_with_commas = whole.chars.to_a.reverse.each_slice(3).map(&:join).join(",").reverse
+  [whole_with_commas, decimal].compact.join(".")
+end
+%>
+
+
+
+<h1><%= @employee.first_name + " " + @employee.last_name %></h1>
+<h2><%= @employee.designation + " " + @employee.department %></h2>
+
+<p> 
+Father name: <%= @employee.father_name%> <br> 
+Age: <%= @employee.date_of_birth%> <br>
+CNIC: <%= @employee.cnic%> <br>
+Grade: <%= @employee.grade%> <br>
+Salary: <%= separate_comma(@employee.salary)%> <br>
+Account Number: <%= @employee.account_number%> <br>
+
+
+</p>

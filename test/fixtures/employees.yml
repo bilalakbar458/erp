@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  first_name: MyString
+  last_name: MyString
+  father_name: MyString
+  cnic: MyString
+  date_of_birth: 2021-04-21
+  grade: 1
+  designation: MyString
+  salary: 9.99
+  department: MyString
+
+two:
+  first_name: MyString
+  last_name: MyString
+  father_name: MyString
+  cnic: MyString
+  date_of_birth: 2021-04-21
+  grade: 1
+  designation: MyString
+  salary: 9.99
+  department: MyString
